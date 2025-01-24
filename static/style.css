@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #343a40;
+}
+
+h2 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-top: 0px;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    width: 83%;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    background-color: #0056b3;
+}
+
+.btn-tables{
+    display:inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    width: 25%;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+.btn-tables:hover{
+    background-color: #0056b3;
+}
+
+#btn-tables-edit{
+    background-color: #0011ff;
+}
+
+#btn-tables-edit:hover{
+    background-color: #1800b3;
+}
+
+form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="password"], select {
+    padding: 10px;
+    width: 300px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    margin-top: 5px;
+}
+
+.btn {
+    margin: auto;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    width: 15%;
+}
+
+button:hover, .btn:hover {
+    background-color: #218838;
+}
+
+th a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+th:hover {
+    background-color: #0056b3;
+}
+
+th a {
+    color: white;
+    text-decoration: none;
+}
+
+th a:hover {
+    text-decoration: underline;
+}
+
+td {
+    background-color: #f8f9fa;
+}
+
+td:nth-child(odd) {
+    background-color: #e9ecef;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 8px 16px;
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 4px;
+    border: 1px solid #007bff;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для кнопки добавления */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    width: auto;
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Стили для формы добавления данных (скрыта по умолчанию) */
+#add-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 8px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    width: 25%;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}

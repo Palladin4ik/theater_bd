@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Редактирование записи</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Редактирование записи: {{ table_name }}</h1>
+
+        <form method="post">
+            {% for col, val in zip(columns, row) %}
+                <div>
+                    <label for="{{ col }}">{{ col }}</label>
+                    <input type="text" id="{{ col }}" name="{{ col }}" value="{{ val }}">
+                </div>
+            {% endfor %}
+            <button type="submit">Сохранить изменения</button>
+        </form>        
+
+        <a href="{{ url_for('view_table', table_name=table_name) }}" class="btn">Вернуться к таблице</a>
+    </div>
+</body>
+</html>

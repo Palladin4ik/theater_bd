@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать в систему управления театром</h1>
+
+        {% if show %}
+        <h2 style="margin-bottom: 10px;">Выберите таблицу для просмотра:</h2>
+        
+        <ul>
+            <li><a href="{{ url_for('зрители_и_спектакли') }}" class="btn-tables">Зрители и их спектакли</a></li>
+            <li><a href="{{ url_for('спектакли_и_прогоны') }}" class="btn-tables">Спектакли и Прогоны</a></li>
+            <li><a href="{{ url_for('места_и_занятость') }}" class="btn-tables">Места и занятость</a></li>
+            <li><a href="{{ url_for('режиссеры_и_спектакли') }}" class="btn-tables">Режиссеры и Спектакли</a></li>
+            <li><a href="{{ url_for('коллективы_и_адреса') }}" class="btn-tables">Коллективы и Адреса</a></li>
+            <br>
+            <h2>Выберите таблицу для редактирования:</h2>
+            {% for table in tables %}
+                <li><a href="{{ url_for('view_table', table_name=table) }}" class="btn-tables" id="btn-tables-edit">{{ table }}</a></li>
+            {% endfor %}
+        </ul>
+        <br><br>
+        <a href="{{ url_for('login') }}" class="btn" style="background-color: #dc3545;">Выйти из системы</a>
+        {% endif %}
+
+        {% if not show %}
+        <br><br>
+        <a href="{{ url_for('login') }}" class="btn">Войти в систему</a>
+        {% endif %}
+    </div>
+</body>
+</html>
